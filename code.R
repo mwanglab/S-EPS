@@ -115,7 +115,7 @@ cov_sub <- function(list_sub, selected_region) {
       max_prev[l] <- max(sub_prev[,length(selected_region)*k-length(selected_region)+l], na.rm = TRUE)
     }
     if (length(which(max_prev >= 0.2)) >= length(selected_region)/2) {
-      non_cov_sub <- append(non_cov_sub, selected_region[k])
+      non_cov_sub <- append(non_cov_sub, list_sub[k])
     }
   }
   list_cov_sub <- setdiff(list_sub, non_cov_sub)
