@@ -2,6 +2,7 @@
 
 #Install packages and set library package
 install.packages("prettyR")
+install.packages("scales")
 
 library(prettyR)
 library(scales)
